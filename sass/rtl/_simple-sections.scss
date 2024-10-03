@@ -1,0 +1,31 @@
+.checklist.style-white li i, .checklist.style-white li svg {
+    margin-left: 20px;
+    margin-right: 0;
+}
+.checklist li i, .checklist li svg {
+    margin-left: 20px;
+    margin-right: 0;
+}
+.checklist.style2 ul li i {
+    margin-left: 15px;
+    margin-right: 0;
+}
+.mobile-menu-wrapper .mobile-menu-area {
+    right: -110%;
+    left: auto;
+}
+.mobile-menu-wrapper.body-visible .mobile-menu-area {
+    right: 0;
+}
+.mobile-menu-wrapper .mobile-logo {
+    padding: 0 30px 0 0;
+}
+.mobile-menu-wrapper .menu-toggle {
+    border-right: 1px solid var(--theme-color);
+}
+.mobile-menu {
+    text-align: right;
+}
+.mobile-menu ul .submenu-item-has-children > a .mean-expand-class:before {
+    content: "\f104";
+}

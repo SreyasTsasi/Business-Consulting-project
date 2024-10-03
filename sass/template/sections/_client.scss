@@ -1,0 +1,75 @@
+/* Client 2 ---------------------------------- */
+.client-area-2 {
+    padding-top: 70px;
+    max-width: 915px;
+    display: block;
+    margin-left: auto;
+    margin-top: -20px;
+
+    @media(max-width: 1399px) {
+        max-width: 860px;
+        margin-top: -70px;
+
+    }
+
+    @include lg {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .client-logo {
+        text-align: center;
+    }
+}
+
+/* Client 3 ---------------------------------- */
+.client-area-3 {
+    border-radius: 20px 20px 0 0;
+    padding: 70px 20px;
+    .client-logo {
+        text-align: center;
+    }
+}
+/* Client 4 ---------------------------------- */
+.client-area-4 {
+    position: relative;
+    .shadow-shape-right {
+        right: 40%;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 1041px;
+        &:after {
+            width: 311px;
+            height: 311px;
+            background: #196164;
+            filter: blur(200px);
+            right: 50%;
+        }
+    }
+    // &:after {
+    //     content: '';
+    //     position: absolute;
+    //     width: 311px;
+    //     height: 311px;
+    //     background: #196164;
+    //     filter: blur(200px);
+    //     border-radius: 50%;
+    //     left: 50%;
+    //     top: 0;
+    //     transform: translate();
+    // }
+    .client-logo {
+        opacity: 0.6;
+        transition: 0.4s;
+        text-align: center;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.client-logo {
+    @include xs {
+        text-align: center;
+    }
+}

@@ -1,0 +1,241 @@
+/* CTA Area 1 ---------------------------------- */
+.cta-wrap1 {
+    position: relative;
+    z-index: 2;
+    padding: 46px 30px 46px 47px;
+
+    @include md {
+        background-color: $theme-color;
+        border-radius: 30px;
+    }
+
+    @include sm {
+        padding: 30px;
+    }
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        z-index: -1;
+
+        @include md {
+            display: none;
+        }
+
+    }
+
+    &:before {
+        left: 0;
+        background-color: $title-color;
+        border-radius: 30px 0px 0 30px;
+    }
+
+    &:after {
+        right: 0;
+        background-color: $theme-color2;
+        border-radius: 0px 30px 30px 0;
+    }
+
+    .title-area {
+        .sec-title {
+            font-size: 40px;
+            line-height: 36px;
+            font-weight: 700;
+            color: $theme-color2;
+
+            @include xs {
+                font-size: 25px;
+                line-height: 30px;
+            }
+        }
+    }
+    .cilent-box_counter {
+        @include md {
+            color: $white-color;
+        }
+    }
+    .cilent-box_title {
+        @include md {
+            color: $white-color;
+        }
+    }
+}
+
+.client-box {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 0 0 0 30px;
+
+    @media(max-width: 1399px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include md {
+        padding: 0;
+        align-items: center;
+
+        .global-btn.style-border {
+            border: 1px solid $white-color;
+            color: $white-color;
+
+            &:before,
+            &:after {
+                background: $white-color;
+
+            }
+
+            &:hover {
+                color: $title-color;
+            }
+        }
+    }
+
+    @media(max-width: 480px) {
+        display: block;
+    }
+
+    .cta-btn {
+        margin-left: 80px;
+
+        @media(max-width: 1399px) {
+            margin-left: 30px;
+        }
+
+        @media(max-width: 480px) {
+            margin: 20px 0 0 0;
+        }
+    }
+}
+
+.client-thumb {
+    display: flex;
+    gap: 20px;
+
+    @media(max-width: 1399px) {
+        display: block;
+    }
+}
+
+.client-thumb-group {
+    display: flex;
+
+    @media(max-width: 1399px) {
+        margin-bottom: 20px;
+    }
+
+    @include vxs {
+        margin-bottom: 20px;
+    }
+
+    .thumb {
+        flex: none;
+
+        &:not(:first-child) {
+            margin-left: -20px;
+        }
+
+        img {
+            border-radius: 50%;
+            height: 54px;
+        }
+
+        &.icon {
+            font-size: 16px;
+            color: $theme-color2;
+            height: 54px;
+            width: 54px;
+            line-height: 54px;
+            border-radius: 50%;
+            text-align: center;
+            margin-left: -54px;
+        }
+    }
+
+
+}
+
+.cilent-box_counter {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+.cilent-box_title {
+    font-size: 18px;
+    line-height: 34px;
+
+    @include md {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+/* CTA Area 2 ---------------------------------- */
+.cta-area-2 {
+    margin: 0 80px;
+    border-radius: 30px;
+
+    @include xxl {
+        margin: 0 30px;
+    }
+
+    .cta2-bg-thumb {
+        margin-top: -80px;
+
+        @include lg {
+            margin-top: -30px;
+        }
+
+        @include md {}
+    }
+}
+
+.cta-wrap2 {
+    max-width: 568px;
+    display: block;
+    margin-left: auto;
+
+    @include xl {
+        max-width: 100%;
+        margin: 0;
+        margin-right: 30px;
+    }
+
+    @include md {
+        padding: 40px 20px 80px 20px;
+        margin: 0;
+        text-align: center;
+    }
+    @include xs {
+        padding: 40px 0;
+    }
+}
+
+
+/* CTA Area 3 ---------------------------------- */
+.cta-area-3 {
+    border-radius: 20px;
+    padding: 80px 60px;
+    margin-top: -140px;
+    .newsletter-form.style2 .form-group {
+        border-color: $theme-color;
+    }
+    @include ml {
+        padding: 60px 38px;
+    }
+    @include md {
+        padding: 50px 50px 60px;
+    }
+    @include xs {
+        padding: 30px;
+        .newsletter-form {
+            margin: 0px 0 80px 0;
+        }
+    }
+}

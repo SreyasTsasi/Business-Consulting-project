@@ -1,0 +1,36 @@
+.header-layout4 .simple-icon:not(:last-child) {
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    padding-left: 25px;
+    margin-left: 0px;
+    border-right: 0;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.hero-4 .hero-thumb4-1 {
+    left: 0;
+    right: auto;
+    transform: rotateY(180deg);
+}
+.team-card.style3 .team-card-bg-shape {
+    left: 0;
+    right: auto;
+    transform: rotateY(180deg);
+}
+.team-card.style3 .team-card_img {
+    margin-left: 20px;
+    margin-right: 0;
+}
+.testi-area-slider4 {
+    margin-left: -80px;
+    margin-right: 0;
+}
+.testi-area-slider4 .icon-box {
+    left: 40px;
+    right: auto;
+}
+@media (max-width: 991px) {
+    .testi-area-slider4 {
+        margin-left: 0;
+    }
+}

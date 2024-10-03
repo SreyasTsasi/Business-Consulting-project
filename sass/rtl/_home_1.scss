@@ -1,0 +1,89 @@
+.hero-item-content {
+    margin-right: auto;
+    margin-left: 0;
+}
+.cta-wrap1:before {
+    right: 0;
+    left: auto;
+    border-radius: 0 30px 30px 0;
+}
+.cta-wrap1:after {
+    left: 0;
+    right: auto;
+    border-radius: 30px 0 0 30px;
+}
+.client-box {
+    padding: 0 30px 0 0;
+}
+
+.client-thumb-group .thumb:not(:first-child) {
+    margin-right: -20px;
+    margin-left: 0;
+}
+.client-thumb-group .thumb.icon {
+    margin-right: -54px;
+    margin-left: 0;
+}
+
+.cta-wrap1 {
+    padding: 46px 47px 46px 30px;
+}
+
+.about1-shape-img1 {
+    left: 0;
+    right: auto;
+}
+.about1-shape-img1 .about1-shape-img-1 {
+    border-radius: 0 20px 0 0;
+}
+.about1-shape-img2 {
+    right: 0;
+    left: auto;
+    transform: rotateY(180deg);
+}
+.about-content-wrap .sec-title {
+    margin-left: 80px;
+    margin-right: 0;
+}
+.goal-title-area {
+    margin-right: auto;
+    margin-left: 0;
+}
+.testi-area-slider {
+    margin: 130px -240px 0px 0;
+}
+.testi-area-slider .slick-arrow {
+    left: -5px;
+    right: auto;
+}
+.marquee-area {
+    direction: ltr;
+}
+.team-card .global-social {
+    padding-right: 15px;
+    padding-left: 0;
+}
+.team-card .global-social a:not(:last-child) {
+    margin: 13px 4px 13px 11px;
+    padding-left: 16px;
+    padding-right: 0;
+    border-left: 1px solid var(--white-color);
+    border-right: 0;
+}
+.team-card .global-social a {
+    margin: 0 10px 0 20px;
+}
+.counter-box {
+    padding: 45px 28px 45px 10px;
+}
+.accordion-card .accordion-body {
+    padding: 30px 0px 30px 30px;
+}
+.footer-links a:not(:last-child) {
+    border-left: 1px solid rgba(255, 255, 255, 0.7);
+    padding-left: 20px;
+    margin-left: 20px;
+    border-right: 0;
+    padding-right: 0;
+    margin-right: 0;
+}

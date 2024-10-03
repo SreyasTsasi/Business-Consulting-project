@@ -1,0 +1,73 @@
+/****contact page*****/
+.contact-page-wrap {
+    border-radius: 20px;
+    padding: 40px 60px;
+}
+.contact-info {
+    display: inline-flex;
+    gap: 20px;
+    align-items: center;
+    &_icon {
+        height: 65px;
+        width: 65px;
+        line-height: 65px;
+        background: rgba($color: #ffffff, $alpha: 0.1);
+        font-size: 30px;
+        color: $white-color;
+        text-align: center;
+        border-radius: 50%;
+        flex: none;
+    }
+    .contact-info_title {
+        font-size: 30px;
+        font-weight: 700;
+        font-family: $title-font;
+        color: $white-color;
+        display: block;
+        margin-top: -0.3em;
+        margin-bottom: 10px;
+    }
+    .contact-info_text {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: $title-font;
+        color: $white-color;
+        margin-bottom: -0.3em;
+        a {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: $title-font;
+            color: $white-color;
+            &:hover {
+                color: $theme-color2;
+            }
+        }
+        &:last-child {
+            margin-bottom: -0.4em;
+        }
+    }
+}
+.map-sec {
+    line-height: 0;
+    filter: grayscale(1);
+    iframe {
+        width: 100%;
+        height: 555px;
+        @include md {
+            height: 400px;
+        }
+    }
+}
+.contact-form {
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    padding: 60px;
+    border: 2px solid $border-color;
+    @include sm {
+        padding: 40px;
+    }
+    @include vxs {
+        padding: 30px;
+    }
+}

@@ -1,0 +1,207 @@
+.slick-track > [class*="col"] {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) / 2);
+    padding-left: calc(var(--bs-gutter-x) / 2);
+    margin-top: var(--bs-gutter-y);
+}
+
+.slick-track {
+    min-width: 100%;
+}
+
+.slick-list {
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+}
+
+.slick-slide img {
+    display: inline-block;
+}
+
+.slick-dots {
+    list-style-type: none;
+    padding: 0;
+    margin: 40px 0 0px 0;
+    line-height: 0;
+    text-align: center;
+    height: max-content;
+
+    li {
+        display: inline-block;
+        margin-right: 18px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    button {
+        font-size: 0;
+        padding: 0;
+        width: 10px;
+        height: 10px;
+        line-height: 0;
+        border-radius: 9999px;
+        border: none;
+        background-color: $theme-color;
+        transition: all ease 0.4s;
+        position: relative;
+
+        &:hover {
+            border-color: $theme-color;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 24px;
+            height: 24px;
+            margin: -12px 0 0 -12px;
+            border: 2px solid $theme-color;
+            border-radius: 50%;
+            transition: all ease 0.4s;
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    .slick-active {
+        button {
+            background-color: $theme-color;
+
+            &::before {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.slick-arrow {
+    --pos-x: 362px;
+    display: inline-block;
+    padding: 0;
+    background-color: $smoke-color;
+    color: $theme-color;
+    position: absolute;
+    top: 50%;
+    border: none;
+    border-radius: 50%;
+    right: var(--pos-x, 120px);
+    width: var(--icon-size, 65px);
+    height: var(--icon-size, 65px);
+    line-height: var(--icon-size, 65px);
+    font-size: var(--icon-font-size, 18px);
+    margin-top: calc(var(--icon-size, 53px) / -1);
+    box-shadow: 0px 6px 50px rgba(37, 37, 37, 0.05);
+    z-index: 2;
+    opacity: 1;
+
+    &.default {
+        position: relative;
+        --pos-x: 0;
+        margin-top: 0;
+    }
+
+    &.slick-next {
+        margin-top: 20px;
+    }
+    &.style2 {
+        --icon-size: 40px;
+        border-radius: 10px;
+        color: $theme-color;
+        border: 1px solid #F3F5F4;
+        background: $white-color;
+        box-shadow: none;
+        &:hover {
+            background: $theme-color;
+            border-color: $theme-color;
+            color: $white-color; 
+        }
+    }
+    &.style3 {
+        color: $white-color;
+        border: 1px solid $theme-color;
+        background: transparent;
+        box-shadow: none;
+        &:hover {
+            background: $theme-color;
+            border-color: $theme-color;
+        }
+    }
+
+    &:hover {
+        opacity: 1;
+        background: $theme-color;
+        color: $white-color;
+    }
+}
+
+.arrow-margin {
+    .slick-arrow {
+        --pos-x: -100px;
+        margin: 0;
+        transform: translate(0, -50%);
+        border-radius: 5px;
+        &.slick-prev {
+            right: auto;
+            left: var(--pos-x);
+        }        
+
+    }
+}
+
+.arrow-wrap {
+    .slick-arrow {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &:hover {
+        .slick-arrow {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+@include hd {
+    .slick-arrow {
+        --pos-x: 362px;
+    }
+}
+@media (max-width: 1600px) {
+    .slick-arrow {
+        --pos-x: 212px;
+    }
+}
+@include xxl {
+    .slick-arrow {
+        --pos-x: 132px;
+    }
+}
+
+@include ml {
+    .slick-arrow {
+        --pos-x: 120px;
+    }
+}
+@media (max-width: 1200px) {
+    .slick-arrow {
+        --pos-x: 42px;
+    }
+}
+@include md {
+    .slick-dots {
+        margin: 40px 0 0 0;
+    }
+    .icon-box {
+        .slick-arrow {
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.blog-shape-img1 {
+    right: 66px;
+    left: auto;
+    .about1-shape-img-2 {
+        margin-right: -35px;
+        margin-left: 0;
+    }
+    @include xxl {
+        left: 42px;
+    }
+}
+.blog-meta span, .blog-meta a {
+    margin-left: 11px;
+    margin-right: 0;
+    i {
+        margin-left: 9px;
+        margin-right: 0;
+    }
+}

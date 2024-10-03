@@ -1,0 +1,320 @@
+.shape-mockup-wrap {
+    z-index: 2;
+    position: relative;
+}
+
+.shape-mockup {
+    position: absolute;
+    z-index: -1;
+
+    &.z-index-3 {
+        z-index: 3;
+    }
+}
+
+.z-index-step1 {
+    position: relative;
+    z-index: 4 !important;
+}
+
+.z-index-common {
+    position: relative;
+    z-index: 3;
+}
+
+.z-index-3 {
+    z-index: 3;
+}
+
+.z-index-n1 {
+    z-index: -1;
+}
+
+.media-body {
+    flex: 1;
+}
+
+.badge {
+    position: absolute;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: inline-block;
+    text-align: center;
+    background-color: $theme-color;
+    color: $white-color;
+    padding: 0.2em 0.45em;
+    font-size: 0.6em;
+    border-radius: 50%;
+    top: 7px;
+    left: 12px;
+    font-weight: 400;
+    transition: 0.3s ease-in-out;
+}
+
+.social-btn {
+    display: flex;
+    gap: 10px;
+
+    a {
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        border-radius: 5px;
+        display: inline-block;
+        background-color: rgba($color: #ffffff, $alpha: 0.2);
+        color: $white-color;
+        text-align: center;
+        font-size: 16px;
+
+        &:hover {
+            background: $white-color;
+            color: $theme-color;
+        }
+    }
+
+    &.style2 {
+        a {
+            width: 30px;
+            height: 30px;
+            line-height: 32px;
+            font-size: 14px;
+            color: $white-color;
+            background: $title-color;
+            border-radius: 5px;
+
+            &:hover {
+                color: $white-color;
+                background-color: $theme-color;
+            }
+        }
+    }
+
+    &.style3 {
+        a {
+            background: rgba(25, 97, 100, 0.2);
+            border-radius: 45px;
+            width: 40px;
+            height: 40px;
+            line-height: 42px;
+            border-radius: 50%;
+            color: $white-color;
+            font-size: 16px;
+
+            &:hover {
+                background: $theme-color;
+                color: $white-color;
+            }
+        }
+    }
+
+    &.style4 {
+        gap: 20px;
+
+        a {
+            background: transparent;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            border-radius: 5px;
+            color: $title-color;
+            border: 1px solid $border-color;
+            font-size: 16px;
+
+            &:hover {
+                border-color: $theme-color;
+                background: $theme-color;
+                color: $white-color;
+            }
+        }
+    }
+    &.style5 {
+        gap: 10px;
+        a {
+            background: transparent;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 50%;
+            color: $theme-color;
+            border: 1px solid $theme-color;
+            font-size: 16px;
+
+            &:hover {
+                border-color: $theme-color;
+                background: $theme-color;
+                color: $white-color;
+            }
+        }
+    }
+
+    &.color-theme {
+        a {
+            color: $body-color;
+            border-color: $theme-color;
+        }
+    }
+}
+
+.global-carousel.slider-shadow {
+    .slick-list {
+        padding: 30px 0px 40px 0px !important;
+        margin: -30px 0px -40px 0px;
+    }
+}
+
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px 25px;
+
+    .btn {
+        flex: none;
+    }
+
+    &.style2 {
+        gap: 20px 70px;
+
+        @include sm {
+            gap: 20px 30px;
+        }
+    }
+}
+
+.media-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    text-align: start;
+    align-items: center;
+
+    .icon {
+        i {
+            height: 45px;
+            width: 45px;
+            line-height: 45px;
+            border-radius: 50%;
+            font-size: 18px;
+            padding: 1px;
+            background: $theme-color2;
+            color: $theme-color;
+            text-align: center; 
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    .title {
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 0px;
+    }
+
+    .link {
+        font-size: 26px;
+        font-weight: 900;
+        margin-bottom: -0.3em;
+
+        &:hover a {
+            color: $title-color !important;
+        }
+    }
+
+    @include vxs {
+        .link {
+            font-size: 22px;
+        }
+    }
+}
+.radius-50 {
+    border-radius: 50px !important;
+}
+/*******Magnific Image*******/
+.mfp-zoom-in .mfp-content {
+    opacity: 0;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+}
+
+.mfp-zoom-in.mfp-bg {
+    opacity: 0;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.mfp-zoom-in.mfp-ready .mfp-content {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.mfp-zoom-in.mfp-ready.mfp-bg {
+    opacity: 0.7;
+}
+
+.mfp-zoom-in.mfp-removing .mfp-content {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    opacity: 0;
+}
+
+.mfp-zoom-in.mfp-removing.mfp-bg {
+    opacity: 0;
+}
+
+.shadow-shape-right {
+    position: absolute;
+    right: 0;
+    width: 731px;
+    height: 1541px;
+    overflow: hidden;
+    z-index: -1;
+    &:after {
+        content: '';
+        position: absolute;
+        filter: blur(300px);
+        width: 311px;
+        height: 311px;
+        border-radius: 50%;
+        background: $theme-color2;
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%);
+    }
+    @include md {
+        display: none;
+    }
+}
+.shadow-shape-left {
+    position: absolute;
+    left: 0;
+    width: 731px;
+    height: 1541px;
+    overflow: hidden;
+    z-index: -1;
+    &:after {
+        content: '';
+        position: absolute;
+        filter: blur(300px);
+        width: 311px;
+        height: 311px;
+        border-radius: 50%;
+        background: $theme-color2;
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include md {
+        display: none;
+    }
+}

@@ -1,0 +1,17 @@
+.process-card-wrap2:after {
+    transform: translate(-50%, -5px) rotateY(180deg);
+    left: 0;
+    right: auto;
+}
+.process-card-wrap2:nth-child(even):after {
+    transform: translate(-50%, -5px) rotateY(180deg) rotateX(180deg) ;
+}
+.testi-card.style3 {
+    padding: 60px 60px 60px 123px;
+}
+.team-card.style4 .global-social a {
+    border: 1px solid $theme-color2;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+}

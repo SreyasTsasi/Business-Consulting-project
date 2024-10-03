@@ -1,0 +1,21 @@
+.sub-title:after, .sub-title:before {
+    margin-left: 12px;
+    margin-right: 0;
+}
+.sub-title:after {
+    margin-left: 0;
+    margin-right: 12px;
+}
+.slick-dots li {
+    margin-left: 18px;
+    margin-right: 0;
+}
+.slick-dots li:last-child {
+    margin-left: 0;
+}
+
+.global-btn img {
+    margin-right: 10px;
+    margin-left: 0;
+    transform: rotateY(180deg);
+}

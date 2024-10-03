@@ -1,0 +1,30 @@
+.header-search-wrap .search-form .form-control {
+    border-left: 1px solid $border-color;
+    border-right: 0;
+}
+.hero-style6 {
+    padding-right: 70px;
+    padding-left: 0;
+    @include md {
+        padding: 70px 70px 70px 0px;
+    }
+    @include sm {
+        padding: 0 50px 50px 50px;
+    }
+    @include vxs {
+        padding: 0 30px 30px 30px;
+    }
+}
+.hero-intro-card {
+    flex-direction: row-reverse;
+    @include lg {
+        flex-direction: column-reverse;
+        .intro-card-img {
+            align-self: self-end;
+        }
+    }
+}
+
+.product-intro-card .intro-card-details {
+    text-align: end;
+}

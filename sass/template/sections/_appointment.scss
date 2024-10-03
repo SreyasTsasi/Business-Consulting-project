@@ -1,0 +1,90 @@
+/*----------------------------------------------
+    # Appointment Area 1
+----------------------------------------------*/
+.appointment-area-1 {
+    position: relative;
+    z-index: 1;
+
+    .appointment-thumb-1 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        z-index: -1;
+        max-width: 70%;
+
+        img {
+            border-radius: 5px 0 0 5px;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.appointment-form-wrap {}
+
+.appointment-form {
+
+    select,
+    .single-select,
+    .form-control,
+    .form-select,
+    textarea,
+    input {
+        height: 60px;
+        padding: 0 20px;
+        border: none;
+        color: var(--body-color);
+        background-color: transparent;
+        font-size: 18px;
+        width: 100%;
+        font-family: var(--body-font);
+        border-bottom: 2px solid rgba(25, 53, 45, 0.2);
+        transition: 0.4s ease-in-out;
+        padding-right: 45px;
+        border-radius: 0px;
+
+
+    }
+
+    .form-group>i {
+        font-size: 14px;
+        color: $theme-color;
+    }
+
+    textarea.form-control,
+    textarea {
+        border: 2px solid rgba(25, 53, 45, 0.2) !important;
+        padding: 20px;
+        border-radius: 20px;
+
+    }
+
+    .global-btn {
+        border-radius: 50px;
+    }
+}
+
+.appointment-thumb-2 {
+    @include lg {
+        margin-bottom: 40px; 
+    }
+}
+
+/* Appointment 2 ---------------------------------- */
+.appointment-area-2 {
+    position: relative;
+    background-size: cover;
+
+    .appointment-form-wrap {
+        margin: 0;
+    }
+}
+
+@include vxs {
+    .appointment-area-2 .appointment-form-wrap {
+        .form-group {
+            margin-bottom: 15px;
+        }
+    }
+}

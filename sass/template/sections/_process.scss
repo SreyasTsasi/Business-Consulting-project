@@ -1,0 +1,126 @@
+/* Process Area 1 ---------------------------------- */
+.process-card {
+    background-color: $white-color;
+    padding: 50px 40px 44px;
+    border-radius: 20px;
+    &_wrapp{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 35px;
+    }
+    &-icon {
+    }
+    &_number {
+        font-weight: 700;
+        font-size: 60.75px;
+        line-height: 60.75px;
+        color: rgba(25, 53, 45,  0.05);
+        margin-bottom: 0;
+    }
+
+
+    .process-card-title {
+        font-size: 22px;
+        font-weight: 700;
+        margin-top: 12px;
+        margin-bottom: -0.4rem;
+    }
+
+    .process-card-text {
+        font-size: 18px;
+        font-weight: 400;
+        font-family: $title-font;
+        margin-bottom: 0px;
+    }
+
+    &:hover {}
+}
+
+/* Process Area 2 ---------------------------------- */
+.process-card-wrap2 {
+    position: relative;
+    &:after {
+        content: url(../img/icon/process-arrow-5-1.svg);
+        position: absolute;
+        display: inline-block;
+        right: 0;
+        bottom: 0;
+        transform: translate(50%, -5px);
+        width: 190px;
+        height: 41px;
+    }
+    &:nth-child(even) {
+        .process-card.style2 {
+            transform: translate(0, -30px);
+            border-color: $theme-color2;
+            .process-card_number {
+                -webkit-text-stroke: 1px $theme-color2;
+            }
+        }
+        &:after {
+            bottom: auto;
+            top: -20px;
+            transform: translate(50%, -5px) rotateX(180deg);
+        }
+    }
+
+    &:last-child {
+        &:after {
+            display: none;
+        }
+    }
+
+    @include xl {
+        &:after {
+            display: none;
+        }
+        .process-card.style2 {
+            margin: 0;
+        }
+    }
+    @include lg {
+        .process-card.style2 {
+            transform: translate(0, 0px);
+        }
+        &:nth-child(even) {
+            .process-card.style2 {
+                transform: translate(0, 0px);
+                border-color: $theme-color;
+                .process-card_number {
+                    -webkit-text-stroke: 1px $theme-color;
+                }
+            }
+        }
+    }
+}
+
+.process-card.style2 {
+    border: 1px solid $theme-color;
+    border-radius: 20px;
+    padding: 30px;
+    background: transparent;
+    margin: 55px 0;
+    .process-card_number {
+        display: inline-block;
+        font-size: 60px;
+        font-weight: 700;
+        color: transparent;
+        margin-bottom: 20px;
+        -webkit-text-stroke: 1px $theme-color;
+    }
+    .process-card-title {
+        color: $white-color;
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .process-card-text {
+        color: $white-color;
+        font-size: 18px;
+        opacity: 0.7;
+        margin-bottom: 10px;
+        display: block;
+    }
+}

@@ -1,0 +1,219 @@
+/* Pricing Card ---------------------------------- */
+.pricing-shape-img1 {
+    opacity: 0.2;
+    left: 53px;
+    top: 288px;
+
+    .about1-shape-img-2 {
+        margin-left: -35px;
+        margin-bottom: -120px;
+    }
+
+    @include xxl {
+        left: 42px;
+    }
+}
+
+.pricing-card {
+    background: $white-color;
+    border: 2px solid $theme-color;
+    border-radius: 20px;
+    padding: 40px;
+
+    &_icon {
+        text-align: center;
+        margin-bottom: 35px;
+
+        img {
+            transition: 0.4s;
+        }
+    }
+
+    &_price {
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: 60.75px;
+        line-height: 70px;
+        color: $title-color;
+        transition: 0.4s;
+        margin-bottom: 20px;
+        margin-top: -0.25em;
+
+        .duration {
+            font-size: 18px;
+            font-weight: 400;
+            color: $body-color;
+        }
+    }
+
+    &_title {
+        font-size: 22px;
+        font-weight: 700;
+        font-family: $title-font;
+        margin-bottom: 23px;
+        transition: 0.4s;
+        margin-top: -0.25em;
+    }
+
+    .checklist {
+        margin-bottom: 42px;
+
+        li {
+            font-size: 18px;
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+
+            i {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .global-btn {
+        width: 100%;
+        background-color: $white-color;
+        border: 2px solid #F3F5F4;
+        color: $title-color;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+
+        &:hover {
+            color: $white-color; 
+        }
+
+    }
+
+    &:hover {
+        .pricing-card_icon {
+            img {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}
+
+@include lg {
+    .pricing-card {
+        padding: 30px;
+    }
+}
+
+@include md {
+    .pricing-card {
+        gap: 60px;
+        justify-content: center;
+    }
+}
+
+@include xs {
+    .pricing-card {
+        gap: 25px;
+        padding: 40px;
+        flex-wrap: wrap;
+        justify-content: start;
+
+        .pricing-card-price-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            flex-direction: column-reverse;
+
+            .pricing-card_price {
+                width: 100%;
+                margin-bottom: 0;
+
+                .duration {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .pricing-card {
+        padding: 30px 30px;
+    }
+}
+
+/* Pricing Card 3---------------------------------- */
+.pricing-area-3 {   
+    background-color: #202022;
+    max-width: 1760px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    padding-bottom: 260px;
+    @include md {
+        padding-bottom: 220px;
+    }
+}
+.pricing-card.style2 {
+    background: transparent;
+    border: 1px solid $title-color;
+    .pricing-card_title {
+        color: $white-color;
+        margin-bottom: 30px;
+    }
+    .pricing-card_price {
+        color: $white-color;
+        margin-bottom: 0;
+        .duration {
+            color: $white-color;
+            margin-left: 5px;
+        }
+    }
+    .pricing-card-price-wrap {
+        border-bottom: 1px solid $title-color;
+        padding-bottom: 25px;
+        margin-bottom: 30px;
+    }
+    .checklist li {
+        color: $white-color;
+        i {
+            color: $theme-color2;
+        }
+    }
+    .global-btn {
+        background: transparent;
+        border: 1px solid $theme-color;
+        color: $white-color;
+        img {
+            filter: brightness(0) invert(1);
+        }
+        &:hover {
+            border-color: $theme-color2;
+            color: $title-color;
+            &:after,
+            &:before {
+                background: $theme-color2;
+            }
+            img {
+                filter: none;
+            }
+        }
+    }
+    &.active {
+        border-color: $theme-color2;
+        padding: 50px 40px;
+        .global-btn {
+            border-color: $theme-color2;
+            color: $title-color;
+            background: $theme-color2;
+            &:after,
+            &:before {
+                background: $theme-color2;
+            }
+            img {
+                filter: none;
+            }
+        }
+    }
+    @include lg {
+        &.active {
+            padding: 30px;
+        }
+    }
+}
